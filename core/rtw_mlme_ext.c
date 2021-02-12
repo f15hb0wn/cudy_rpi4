@@ -6714,7 +6714,7 @@ unsigned int on_action_public_p2p(union recv_frame *precv_frame)
 					/*	Commented by Albert 20120510 */
 					/*	Copy to the pwdinfo->p2p_peer_interface_addr. */
 					/*	So that the WFD UI ( or Sigma ) can get the peer interface address by using the following command. */
-					/*	#> iwpriv wlan0 p2p_get peer_ifa */
+					/*	#> iwpriv wlan1 p2p_get peer_ifa */
 					/*	After having the peer interface address, the sigma can find the correct conf file for wpa_supplicant. */
 
 					if (attr_contentlen) {

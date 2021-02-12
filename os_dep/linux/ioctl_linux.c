@@ -3101,15 +3101,15 @@ static int rtw_wx_get_retry(struct net_device *dev,
 	#define IW_ENCODE_NOKEY		0x0800  /* Key is write only, so not present */
 	#define IW_ENCODE_TEMP		0x0400  /* Temporary key */
 	/*
-	iwconfig wlan0 key on->flags = 0x6001->maybe it means auto
-	iwconfig wlan0 key off->flags = 0x8800
-	iwconfig wlan0 key open->flags = 0x2800
-	iwconfig wlan0 key open 1234567890->flags = 0x2000
-	iwconfig wlan0 key restricted->flags = 0x4800
-	iwconfig wlan0 key open [3] 1234567890->flags = 0x2003
-	iwconfig wlan0 key restricted [2] 1234567890->flags = 0x4002
-	iwconfig wlan0 key open [3] -> flags = 0x2803
-	iwconfig wlan0 key restricted [2] -> flags = 0x4802
+	iwconfig wlan1 key on->flags = 0x6001->maybe it means auto
+	iwconfig wlan1 key off->flags = 0x8800
+	iwconfig wlan1 key open->flags = 0x2800
+	iwconfig wlan1 key open 1234567890->flags = 0x2000
+	iwconfig wlan1 key restricted->flags = 0x4800
+	iwconfig wlan1 key open [3] 1234567890->flags = 0x2003
+	iwconfig wlan1 key restricted [2] 1234567890->flags = 0x4002
+	iwconfig wlan1 key open [3] -> flags = 0x2803
+	iwconfig wlan1 key restricted [2] -> flags = 0x4802
 	*/
 #endif
 
@@ -5401,7 +5401,7 @@ static int rtw_p2p_invite_req(struct net_device *dev,
 	/*	The input data contains two informations. */
 	/*	1. First information is the P2P device address which you want to send to.	 */
 	/*	2. Second information is the group id which combines with GO's mac address, space and GO's ssid. */
-	/*	Command line sample: iwpriv wlan0 p2p_set invite="00:11:22:33:44:55 00:E0:4C:00:00:05 DIRECT-xy" */
+	/*	Command line sample: iwpriv wlan1 p2p_set invite="00:11:22:33:44:55 00:E0:4C:00:00:05 DIRECT-xy" */
 	/*	Format: 00:11:22:33:44:55 00:E0:4C:00:00:05 DIRECT-xy */
 
 	RTW_INFO("[%s] data = %s\n", __FUNCTION__, extra);

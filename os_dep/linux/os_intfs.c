@@ -1362,14 +1362,14 @@ int rtw_init_netdev_name(struct net_device *pnetdev, const char *ifname)
 
 	if (padapter->bDongle == 1) {
 #if (LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 24))
-		TargetNetdev = dev_get_by_name("wlan0");
+		TargetNetdev = dev_get_by_name("wlan1");
 #else
 #if (LINUX_VERSION_CODE < KERNEL_VERSION(2, 6, 26))
 		devnet = pnetdev->nd_net;
 #else
 		devnet = dev_net(pnetdev);
 #endif
-		TargetNetdev = dev_get_by_name(devnet, "wlan0");
+		TargetNetdev = dev_get_by_name(devnet, "wlan1");
 #endif
 		if (TargetNetdev) {
 			RTW_INFO("Force onboard module driver disappear !!!\n");

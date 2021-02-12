@@ -35,9 +35,9 @@
 
 /*
 * (RTW_P2P_GROUP_INTERFACE, RTW_DEDICATED_P2P_DEVICE)
-* (0, 0): wlan0 + p2p0(PD+PG)
-* (1, 0): wlan0(with PD) + dynamic PGs
-* (1, 1): wlan0 (with dynamic PD wdev) + dynamic PGs
+* (0, 0): wlan1 + p2p0(PD+PG)
+* (1, 0): wlan1(with PD) + dynamic PGs
+* (1, 1): wlan1 (with dynamic PD wdev) + dynamic PGs
 */
 
 #if RTW_P2P_GROUP_INTERFACE

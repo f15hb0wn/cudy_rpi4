@@ -1,6 +1,6 @@
 #!/bin/bash
 
-var0=`ps aux|awk '/dhclient wlan0/'|awk '$11!="awk"{print $2}'`
+var0=`ps aux|awk '/dhclient wlan1/'|awk '$11!="awk"{print $2}'`
 
 kill $var0
 cp ifcfg-wlan1 /etc/sysconfig/network-scripts/
